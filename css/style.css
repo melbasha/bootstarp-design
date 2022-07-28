@@ -1,0 +1,294 @@
+/* start navbar*/
+
+:root {
+    --dark-color:#19283f;
+    --green-color:#33d1cc;
+    --red-color:#ff3150;
+    --yellow-color:#ffc400;
+    --section-color:#eff7fa;
+}
+
+body{
+    font-family: 'Roboto' , sans-serif;
+    height: 10000px;
+}
+
+.navbar{
+    background-color: var(--dark-color);
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+}
+
+.navbar .navbar-nav .nav-link{
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--green-color);
+}
+
+.search{
+    color: var(--green-color);
+    border-left: 1px solid var(--green-color);
+}
+
+.navbar .navbar-toggler{
+    color: white;
+    font-size: 25px;
+    border: 1px solid white;
+}
+
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded='true']{
+    border-color: var(--green-color);
+}
+
+/* End navbar*/
+
+
+
+/* start landing*/
+.landing{
+    background-color: var(--dark-color);
+    min-height: calc( 100vh - 72px );
+}
+
+.main-btn{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    padding: .5rem 1rem;
+}
+
+
+
+/* End landing*/
+
+/* start features */
+.text-cen-2::after{
+    content: '';
+    width: 250px;
+    height: 1.5px;
+    background-color: var(--green-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .iconFrist{
+    color: var(--yellow-color);
+}
+
+.iconHolder{
+    height: 200px;
+}
+
+.iconHolder svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.iconHolder .number{
+    font-size: 10rem;
+    color: var(--section-color);
+}
+
+.iconHolder .pen{
+    color: var(--green-color);
+   
+}
+
+.feat h4{
+    color: var(--yellow-color);
+}
+/* End features */
+
+
+
+/* start ourwork*/
+
+.our-work .iconFrist-2 {
+    color: var(--yellow-color);
+}
+
+.text-cen-3::after{
+    content: '';
+    width: 250px;
+    height: 1.5px;
+    background-color: var(--green-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.our-work{
+    background-color: var(--section-color);
+    overflow: hidden;
+}
+
+.our-work .list li.Active{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+
+.our-work .list li{
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+
+.our-work .list li:hover{
+    color: var(--yellow-color);
+    background-color: var(--red-color);
+    border-radius:40px;
+}
+
+.our-work .box{
+    position: relative;
+    overflow: hidden;
+}
+
+.our-work .box::before{
+    position: absolute;
+    content: attr(data-work);
+    background-color: rgba(51, 209, 204, 75%);
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: .3s;
+    transform: translateX(-100%);
+}
+
+.our-work .box:hover:before{
+    transform: translateX(0);
+}
+
+/* end ourwork*/
+
+
+/* start stuff */
+
+.stuff .icon-Frist{
+    color: var(--yellow-color);
+}
+
+
+.text-cen-4::after{
+    content: '';
+    width: 200px;
+    height: 1.5px;
+    background-color: var(--green-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.stuff .paragraph-1{
+    max-width: 400px;
+}
+
+/*  end stuff */
+
+
+/* start team*/
+
+.team{
+    background-color: var(--section-color);
+}
+
+.team .para-head{
+    max-width: 1145px;
+}
+
+.para-head h2{
+    color: var(--green-color);
+}
+
+.box h4{
+    padding: .5rem 1rem;
+    color:white;
+    background-color:var(--green-color);
+}
+
+/* end team*/
+
+
+.tech{
+    background-color: var(--section-color);
+}
+
+
+.tex{
+    background-color: var(--dark-color);
+}
+.tex h2{
+    color: white;
+}
+
+.icon9rist{
+    color: var(--yellow-color);
+}
+
+.blog{
+    background-color: var(--section-color);
+}
+
+
+/* start subscribe */
+
+
+.subscribe{
+    background-color: var(--yellow-color);
+}
+
+.subscribe h6{
+    color: var(--dark-color);
+}
+
+.subscribe .div-inp input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.subscribe .div-inp input::placeholder{
+    color: white;
+    font-weight: bold;
+}
+
+.subscribe .div-inp input:focus{
+    outline: none;
+}
+
+.sub-btn:hover{
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+
+/* end subscribe */
+
+
+/* start footer */
+.footer{
+    background-color: var(--dark-color);
+}
+
+.img-33{
+    width: 100px;
+    height: 100px;
+    margin-top: -1.75rem;
+
+}
+
+/* end footer*/
